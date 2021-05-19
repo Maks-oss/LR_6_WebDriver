@@ -14,4 +14,5 @@ actual_result = web.find_element_by_tag_name('h1').text
 assert search_input in actual_result
 results = web.find_element_by_css_selector('.category-products').find_elements_by_class_name('category-product')
 assert len(results) > 0
+
 print(actual_result, len(results))
